@@ -53,6 +53,17 @@ nav, p, section, article {
     height: auto;
 }
 
+.hero article {
+  position: absolute;
+  top: 90px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--accent1-color);
+  padding: 10px;
+  border-radius: 4px;
+  width: 95%;
+}
+
+
 h1 {
   position: absolute;
   top: 20px;
