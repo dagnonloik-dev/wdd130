@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #fb8500; 
-  --secondary-color: #8ecae6;
-  --accent1-color: #023047; 
+  --primary-color: #023047; 
+  --secondary-color: #023047;
+  --accent1-color: #0b567e; 
   --accent2-color: #ffb703; 
   --heading-font: "Fondamento", sans-serif;
   --body-font: "Noto", sans-serif;
@@ -19,12 +19,22 @@ body {
 }
 
 header {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    grid-template-columns: 1fr 4fr;
     background-color: var(--primary-color);
     color: var(--accent2-color);
 }
 
+header img{
+    height: 100px;
+    margin-left: 20px;
+}
+
 header, main, footer {
-  width: 840px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -34,13 +44,21 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav, p, section, .article-pseudo {
   margin: 16px;
   padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
 }
 
 .hero {
@@ -53,11 +71,14 @@ nav, p, section, article {
     height: auto;
 }
 
-.hero article {
+.hero div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 90px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: var(--accent1-color);
+  background-color: var(--primary-color);
+  color: #fff;
   padding: 10px;
   border-radius: 4px;
   width: 95%;
@@ -75,7 +96,80 @@ h1 {
   color: #fff; /* white text - make sure there is enough contrast with the background-color */
 }
 
-.hero article img {
+.hero div img {
   float: right;
-  width: 125px;
+  width: 80px;
+  margin-right: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+section .history{
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+section .history img {
+  width: 260px; 
+  height: 220px;
+}
+
+section .adventure {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section .adventure img {
+  width: 150px; 
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+footer .socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .socialmedia a {
+    text-decoration: none;
+}
+.socialmedia a img{
+    width: 40px;
+    height: 40px;
 }
