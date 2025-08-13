@@ -101,7 +101,7 @@ main .hero h1 {
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: #fff;
 }
 
 main .hero div img {
@@ -157,7 +157,7 @@ figure {
   text-align: center;
 }
 
-/* Company Info + Map side by side */
+
 main .contact-info {
   display: flex;
   flex-direction: row;
@@ -176,7 +176,7 @@ main .contact-info .map {
   min-width: 250px;
 }
 
-/* Employee Section */
+
 main .employees .team {
   display: flex;
   justify-content: space-around;
@@ -198,7 +198,6 @@ main .employees figcaption {
   font-weight: bold;
 }
 
-/* Contact Form Section */
 .contact-form form {
   display: flex;
   flex-direction: column;
@@ -250,7 +249,6 @@ main .employees figcaption {
   background-color: #0059b3;
 }
 
-/* footer */
 
 footer {
   display: grid;
