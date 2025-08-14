@@ -282,6 +282,12 @@ footer .socialmedia a {
     height: 40px;
 }
 
+.hero .hero_subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+
 .newsletter-section {
   background-color: #f8f9fa;
   padding: 3rem 2rem;
